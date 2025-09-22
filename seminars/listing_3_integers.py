@@ -10,7 +10,49 @@ Integers and float data.
 # Common information about numbers
 #
 # integers (int) are whole numbers (positive, negative, or zero)
-# floating-point numb
+# floating-point numbers (float) represent decimal values
+# numbers are immutable
+# numbers are not iterable
+# arithmetic operations can be applied: +, -, *, /, //, %, **
+
+# Create numbers
+a = 10  # int
+b = 3.5  # float
+print(a, b)
+
+# Basic arithmetic operations
+print(a + b)  # addition
+print(a - b)  # subtraction
+print(a * b)  # multiplication
+print(a / b)  # division (always float)
+print(a // 3)  # integer division
+print(a % 3)  # modulus (remainder)
+print(a**2)  # exponentiation
+
+# Type conversion
+print(int(3.9))  # convert float to int → 3
+print(float(7))  # convert int to float → 7.0
+
+# Useful functions for numbers (some of them)
+# abs(x)       → absolute value of x
+# round(x, n)  → round x to n decimal places
+# pow(a, b)    → a raised to the power of b
+# divmod(a, b) → returns a tuple (a // b, a % b)
+# max(a, b, …) → the largest value
+# min(a, b, …) → the smallest value
+# sum(iterable) → sum of all elements in an iterable
+
+
+# TASKS
+
+
+# Task 1:
+def add_numbers(a: int, b: int) -> int:
+    """
+    Return the sum of two integers.
+
+    Args:
+        a (int): First integer
         b (int): Second integer
 
     Returns:
